@@ -1,7 +1,7 @@
 <div itemscope itemtype="http://schema.org/Drug">
 <h3 class="infosearch" itemprop="name">{$name}</h3>
 {if isset($conditions)}
-    <img class="bigpicto" src="img/x.png" />
+    <img class="bigpicto" src="img/x.png" alt="" />
     <div itemprop="prescriptionStatus">
         <p><strong class="no">Ne réutilisez pas ce médicament sans prescription médicale !</strong></p>
         <div class="reasons">
@@ -15,7 +15,7 @@
     </div>
     <div class="moreinfo">S'il vous reste des doses non-utilisées, vous pouvez ramener ce médicament à votre pharmacien.</div>
 {else}
-    <img class="bigpicto" src="img/y.png" />
+    <img class="bigpicto" src="img/y.png" alt="" />
     <div itemprop="prescriptionStatus">
         <span class="yes">Vous pouvez réutiliser ce médicament, à condition de respecter les consignes suivantes&nbsp;:</span>
         <div class="reasons">
