@@ -7,6 +7,7 @@
     <meta name="description" content="Il vous reste des doses de médicament d'un traitement passé et vous souhaitez savoir si vous pouvez les réutiliser pour des symptomes similaires ? Ce site vous indique si l'usage de ce médicament est réglementé." />
     <meta property="og:url" content="http://medicaments.rudloff.pro/" />
     <meta property="og:title" content="Avec ou sans ordonnance ?" />
+    <meta property="og:description" content="Il vous reste des doses de médicament d'un traitement passé et vous souhaitez savoir si vous pouvez les réutiliser pour des symptomes similaires ? Ce site vous indique si l'usage de ce médicament est réglementé." />
     <meta property="og:image" content="http://medicaments.rudloff.pro/img/logo.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content=""><meta name="twitter:title" content="Avec ou sans ordonnance ?" />
