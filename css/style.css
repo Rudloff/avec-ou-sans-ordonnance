@@ -13,7 +13,7 @@ body {
 
 header {
     padding:1em;
-    margin-bottom:2em;
+    margin-bottom:1em;
 }
 
 .no {
@@ -58,7 +58,7 @@ header {
     padding-left:1em;
     padding-right:1em;
     margin-right:1em;
-    margin-bottom:3em;
+    margin-bottom:1em;
 }
 
 .search_field::-moz-placeholder {
@@ -131,6 +131,7 @@ footer a:hover {
     font-weight: 400;
     list-style-type:none;
     padding:0;
+    margin-bottom:4em;
 }
 
 .results a {
@@ -186,7 +187,7 @@ footer a:hover {
 h3 {
     max-width: 858px;
     margin:auto;
-    margin-bottom:3em;
+    margin-bottom:2em;
 }
 
 .bigpicto {
