@@ -7,6 +7,6 @@ Il vous reste des doses de médicament<span class="small">d'un traitement passé
 Ce site vous indique si l'usage de ce médicament est réglementé.
 </div><div class="step">
 <img src="img/step 3.png" alt="" /><br/>
-Il ne remplace pas l'avis d'un médecin ou d'un pharmacien !</strong>
+Il ne remplace pas l'avis d'un médecin ou d'un pharmacien !
 </div>
 </div>
