@@ -8,6 +8,7 @@ $pdo = new PDO('mysql:dbname='.DBNAME.';host=localhost', DBUSER, DBPASS);
 $pdo->exec("SET NAMES 'utf8';");
 
 if (isset($_GET['id'])) {
+    $smarty->display('header.tpl');
     $smarty->assign('search', '');
     $smarty->display('search.tpl');
     $query = $pdo->prepare(
@@ -30,6 +31,7 @@ if (isset($_GET['id'])) {
     $smarty->assign('name', $info['Dénomination du médicament']);
     $smarty->display('info.tpl');
 } elseif (isset($_GET['search'])) {
+    $smarty->display('header.tpl');
     $smarty->assign('search', $_GET['search']);
     $smarty->display('search.tpl');
     $query = $pdo->prepare(
@@ -45,11 +47,13 @@ if (isset($_GET['id'])) {
         $result['id'] = $result['Code CIS'];
     }
     $smarty->assign('results', $results);
+    $smarty->assign('search', $_GET['search']);
     $smarty->display('results.tpl');
 } else {
-    $smarty->display('home.tpl');
+    $smarty->display('header_big.tpl');
     $smarty->assign('search', '');
     $smarty->display('search.tpl');
+    $smarty->display('home.tpl');
 }
 $smarty->display('footer.tpl');
 ?>
