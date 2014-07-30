@@ -1,4 +1,4 @@
-<div itemscope itemtype="http://schema.org/Drug">
+<div itemscope itemtype="http://schema.org/Drug" id="info">
 <meta itemprop="code" content="{$id}" />
 <h3 class="infosearch" itemprop="name">{$name}</h3>
 {if isset($conditions)}
