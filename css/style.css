@@ -16,10 +16,15 @@ header {
     margin-bottom:1em;
 }
 
+header img {
+    max-width:100%;
+}
+
 .no {
     color: #dd1753;
     font-weight: 700;
     width: 518px;
+    max-width:90%;
     display:block;
     text-align:left;
     margin:auto;
@@ -29,6 +34,7 @@ header {
     color: #7bd7a4;
     font-weight: 700;
     width: 518px;
+    max-width:90%;
     display:block;
     text-align:left;
     margin:auto;
@@ -48,9 +54,15 @@ header {
     background-color: #56a078;
 }
 
+.search_form {
+    max-width:90%;
+    margin:auto;
+}
+
 .search_field {
-    min-width: 430px;
+    width: 430px;
     min-height: 50px;
+    max-width:calc(100% - 2em);;
     background-color:#efefef;
     border-radius:0;
     border: thin solid #d4d4d4;
@@ -125,6 +137,7 @@ footer a:hover {
 .results {
     text-align:left;
     width: 858px;
+    max-width:100%;
     margin:2em auto;
     color: #848484;
     font-size: 14px;
@@ -135,6 +148,9 @@ footer a:hover {
 }
 
 .results a {
+    white-space:nowrap;
+    overflow-x:hidden;
+    text-overflow:ellipsis;
     color: #848484;
     text-decoration:none;
     display:block;
@@ -175,6 +191,7 @@ footer a:hover {
     font-size: 12px;
     text-align:left;
     width: 518px;
+    max-width:90%;
     margin:auto;
 }
 
@@ -201,6 +218,7 @@ h3 {
     font-weight: 400;
     background-color:#817058;
     width: 858px;
+    max-width:100%;
     margin:auto;
     padding-top:0.5em;
     padding-bottom:0.5em;
@@ -210,4 +228,10 @@ h3 {
 
 h1 a {
     color: #7bd7a4;
+}
+
+@media (max-width: 800px) {
+    .bigpicto {
+        display:none;
+    }
 }
