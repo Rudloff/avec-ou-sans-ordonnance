@@ -1,7 +1,7 @@
 <div class="steps">
 <div class="step">
 <img src="img/step%201.png" alt="" /><br/>
-Il vous reste des doses de médicament<span class="small">d'un traitement passé et vous souhaitez savoir si vous pouvez les réutiliser pour des symptomes similaires ?</span>
+Il vous reste des doses de médicament<span class="small">d'un traitement passé et vous souhaitez savoir si vous pouvez les réutiliser pour des symptômes similaires ?</span>
 </div><div class="step">
 <img src="img/step%202.png" alt="" /><br/>
 Ce site vous indique si l'usage de ce médicament est réglementé.
