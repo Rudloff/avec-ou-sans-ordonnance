@@ -25,6 +25,7 @@ if (isset($_GET['id'])) {
         $smarty->assign('conditions', explode(';', $info['conditions']));
     }
     $smarty->assign('name', $info['Dénomination du médicament']);
+    $smarty->assign('id', $_GET['id']);
     $smarty->display('head.tpl');
     $smarty->display('header.tpl');
     $smarty->assign('search', '');

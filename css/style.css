@@ -188,7 +188,7 @@ footer a:hover {
 
 .reasons {
     color: #aeaeae;
-    font-size: 12px;
+    font-size: 13px;
     text-align:left;
     width: 518px;
     max-width:90%;
@@ -199,6 +199,15 @@ footer a:hover {
     list-style-type:none;
     padding-left:0;
     line-height:2em;
+}
+
+.reasons a {
+    text-decoration:none;
+    color: #7bd7a4;
+}
+
+.reasons a:hover {
+    color:black;
 }
 
 h3 {
@@ -214,7 +223,7 @@ h3 {
 
 .moreinfo {
     color: #ffffff;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     background-color:#817058;
     width: 858px;
