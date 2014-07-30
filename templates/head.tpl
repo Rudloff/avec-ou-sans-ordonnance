@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <head>
     <meta charset="UTF-8" />
-    <title>Avec ou sans ordonnance ?</title>
+    <title>Avec ou sans ordonnance ?{if $name} &mdash; {$name}{/if}</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

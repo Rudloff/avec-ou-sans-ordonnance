@@ -3,14 +3,10 @@ require_once 'config.php';
 require_once 'smarty/Smarty.class.php';
 $smarty = new Smarty();
 $smarty->setTemplateDir('templates/');
-$smarty->display('head.tpl');
 $pdo = new PDO('mysql:dbname='.DBNAME.';host=localhost', DBUSER, DBPASS);
 $pdo->exec("SET NAMES 'utf8';");
 
 if (isset($_GET['id'])) {
-    $smarty->display('header.tpl');
-    $smarty->assign('search', '');
-    $smarty->display('search.tpl');
     $query = $pdo->prepare(
         'SELECT `Dénomination du médicament`,
         GROUP_CONCAT(`Condition de prescription ou de délivrance`
@@ -29,8 +25,13 @@ if (isset($_GET['id'])) {
         $smarty->assign('conditions', explode(';', $info['conditions']));
     }
     $smarty->assign('name', $info['Dénomination du médicament']);
+    $smarty->display('head.tpl');
+    $smarty->display('header.tpl');
+    $smarty->assign('search', '');
+    $smarty->display('search.tpl');
     $smarty->display('info.tpl');
 } elseif (isset($_GET['search'])) {
+    $smarty->display('head.tpl');
     $smarty->display('header.tpl');
     $smarty->assign('search', $_GET['search']);
     $smarty->display('search.tpl');
@@ -50,6 +51,7 @@ if (isset($_GET['id'])) {
     $smarty->assign('search', $_GET['search']);
     $smarty->display('results.tpl');
 } else {
+    $smarty->display('head.tpl');
     $smarty->display('header_big.tpl');
     $smarty->assign('search', '');
     $smarty->display('search.tpl');
