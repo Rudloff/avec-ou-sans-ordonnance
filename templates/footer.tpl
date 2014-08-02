@@ -4,3 +4,4 @@
 <p>Outil développé par <a target="_blank" href="https://rudloff.pro/">Pierre Rudloff</a> &middot; Webdesign par <a target="_blank" href="http://olivierhaquette.fr/">Olivier Haquette</a></p>
 </footer>
 </body>
+</html>

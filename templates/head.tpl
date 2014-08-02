@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<html lang="fr">
 <head>
     <meta charset="UTF-8" />
     <title>Avec ou sans ordonnance ?{if isset($name)} &ndash; {$name}{/if}</title>
