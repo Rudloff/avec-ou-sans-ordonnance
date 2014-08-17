@@ -38,7 +38,9 @@ if (isset($_GET['id'])) {
     $smarty->display('search.tpl');
     $query = $pdo->prepare(
         'SELECT `Code CIS`, `Dénomination du médicament` FROM `Spécialités`
-        WHERE `Dénomination du médicament` LIKE :search;'
+        WHERE `Dénomination du médicament` LIKE :search
+        AND `Type de procédure d\'autorisation de mise sur le marché`
+        NOT LIKE "Autorisation d\'importation parallèle";'
     );
     $search = '%'.$_GET['search'].'%';
     $query->bindParam(':search', $search, PDO::PARAM_STR);
