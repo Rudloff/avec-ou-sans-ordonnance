@@ -16,21 +16,27 @@ if (isset($_GET['id'])) {
         ON `Conditions de prescription et de délivrance`.`Code CIS`
             = `Spécialités`.`Code CIS`
         WHERE `Spécialités`.`Code CIS` = :id
+        AND `Type de procédure d\'autorisation de mise sur le marché`
+        NOT LIKE "Autorisation d\'importation parallèle"
         GROUP BY `Spécialités`.`Code CIS`;'
     );
     $query->bindParam(':id', $_GET['id'], PDO::PARAM_INT);
     $query->execute();
     $info = $query->fetch();
-    if (!empty($info['conditions'])) {
-        $smarty->assign('conditions', explode(';', $info['conditions']));
+    if (!empty($info['Dénomination du médicament'])) {
+        if (!empty($info['conditions'])) {
+            $smarty->assign('conditions', explode(';', $info['conditions']));
+        }
+        $smarty->assign('name', $info['Dénomination du médicament']);
+        $smarty->assign('id', $_GET['id']);
+        $smarty->display('head.tpl');
+        $smarty->display('header.tpl');
+        $smarty->assign('search', '');
+        $smarty->display('search.tpl');
+        $smarty->display('info.tpl');
+    } else {
+        header('Location: index.php');
     }
-    $smarty->assign('name', $info['Dénomination du médicament']);
-    $smarty->assign('id', $_GET['id']);
-    $smarty->display('head.tpl');
-    $smarty->display('header.tpl');
-    $smarty->assign('search', '');
-    $smarty->display('search.tpl');
-    $smarty->display('info.tpl');
 } elseif (isset($_GET['search'])) {
     $smarty->display('head.tpl');
     $smarty->display('header.tpl');
