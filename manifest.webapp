@@ -7,7 +7,8 @@
     },
     "icons": {
         "32": "/img/favicon.png",
-        "176": "/img/logo.png"
+        "176": "/img/logo.png",
+        "250": "/img/logo_250.png"
     },
     "default_locale": "fr",
     "launch_path": "/index.php"
