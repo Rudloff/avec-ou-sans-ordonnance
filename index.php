@@ -40,7 +40,7 @@ if (isset($_GET['id'])) {
 } elseif (isset($_GET['search'])) {
     $smarty->display('head.tpl');
     $smarty->display('header.tpl');
-    $smarty->assign('search', $_GET['search']);
+    $smarty->assign('search', htmlentities($_GET['search']));
     $smarty->display('search.tpl');
     $query = $pdo->prepare(
         'SELECT `Code CIS`, `Dénomination du médicament` FROM `Spécialités`
