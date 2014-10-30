@@ -6,7 +6,7 @@
         <li><a href="index.php?id={$result.id}#info">{$result.name}</a></li>
     {/foreach}
 </ul>
+</div>
 {else}
     <p>Aucun résultat.</p>
 {/if}
-</div>
