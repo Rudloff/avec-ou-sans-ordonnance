@@ -66,5 +66,7 @@ if (isset($_GET['id'])) {
     $smarty->display('search.tpl');
     $smarty->display('home.tpl');
 }
+$timestamp = json_decode(file_get_contents('data/timestamp.json'));
+$smarty->assign('date', date('d/m/Y', strtotime($timestamp->date)));
 $smarty->display('footer.tpl');
 ?>
