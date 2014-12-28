@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Avec ou sans ordonnance ?{if isset($name)} &ndash; {$name}{/if}</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="dist/main.css" />
     <link rel="icon" href="img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Il vous reste des doses de {if isset($name)}« {$name} »{else}médicament{/if} d'un traitement passé et vous souhaitez savoir si vous pouvez les réutiliser pour des symptômes similaires ? Ce site vous indique si l'usage de ce médicament est réglementé." />
