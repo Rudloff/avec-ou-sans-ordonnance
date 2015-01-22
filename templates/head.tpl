@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fr">
+<html lang="fr" itemscope itemtype="http://schema.org/WebSite">
 <head>
     <meta charset="UTF-8" />
     <title>Avec ou sans ordonnance ?{if isset($name)} &ndash; {$name}{/if}</title>
@@ -19,5 +19,6 @@
     <meta name="twitter:domain" content="medicaments.rudloff.pro" />
     <link rel="author" href="https://plus.google.com/110403274854419000481?rel=author" />
     <link rel="publisher" href="https://plus.google.com/105378045095270911364/" />
+    <link itemprop="url" href="https://medicaments.rudloff.pro/" />
 </head>
 <body>
