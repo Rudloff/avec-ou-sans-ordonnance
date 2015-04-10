@@ -1,6 +1,6 @@
 <?php
+require_once 'vendor/autoload.php';
 require_once 'config.php';
-require_once 'smarty/Smarty.class.php';
 $smarty = new Smarty();
 $smarty->setTemplateDir('templates/');
 $pdo = new PDO('mysql:dbname='.DBNAME.';host=localhost', DBUSER, DBPASS);
