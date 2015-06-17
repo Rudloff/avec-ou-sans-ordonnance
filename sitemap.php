@@ -11,6 +11,6 @@ $query->execute();
 $results = $query->fetchAll();
 header('Content-Type: text/plain');
 foreach ($results as $result) {
-    echo 'http://medicaments.rudloff.pro/index.php?id='.$result['Code CIS'].PHP_EOL;
+    echo 'http://avec-ou-sans-ordonnance.fr/index.php?id='.$result['Code CIS'].PHP_EOL;
 }
 ?>
