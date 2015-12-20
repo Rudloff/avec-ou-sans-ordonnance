@@ -1,4 +1,7 @@
 {
+    "name": "rudloff/avec-ou-sans-ordonnance",
+    "license": "GPL-3.0",
+    "description": "Find out if a pharmaceutical drug can be used freely in France",
     "require": {
         "smarty/smarty": "~3.1.21"
     }
