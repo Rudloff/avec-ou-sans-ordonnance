@@ -1,6 +1,7 @@
 {
     "name": "avec-ou-sans-ordonnance",
     "version": "0.1.0",
+    "license": "GPL-3.0",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-cssmin": "~0.14.0",
