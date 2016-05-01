@@ -17,8 +17,6 @@
     <meta name="twitter:creator" content="@Tael67" />
     <meta name="twitter:image:src" content="https://medicaments.rudloff.pro/img/logo.png" />
     <meta name="twitter:domain" content="medicaments.rudloff.pro" />
-    <link rel="author" href="https://plus.google.com/110403274854419000481?rel=author" />
-    <link rel="publisher" href="https://plus.google.com/105378045095270911364/" />
     <link itemprop="url" href="https://medicaments.rudloff.pro/" />
 </head>
 <body>
